@@ -1,0 +1,130 @@
+.erp-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #fff;
+  }
+  
+  .erp-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3EC63E;
+    margin-bottom: 15px;
+  }
+  
+  .erp-subtitle {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    border-radius: 9px;
+    border: none;
+    background: #F2F4F7;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .tab.active {
+    background: #4DE6ED;
+  }
+  
+  /* BLACK CONTAINER */
+  .tab-content {
+    background: #000;
+    border-radius: 12px;
+    padding: 60px;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 700px;
+    color: #fff;
+  }
+  
+  /* Hide Content */
+  .content {
+    display: none;
+  }
+  
+  .content.active {
+    display: block;
+  }
+  
+  /* ROW 1 */
+  .text-row {
+    margin-bottom: 60px;
+  }
+  
+  .text-row h3 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  /* 3 Column Center */
+  .feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;   /* CENTER GRID */
+    gap: 20px 80px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .feature-list li {
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  
+  /* BULLET IMAGE */
+  .feature-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    background: url("images/check-icon.png") no-repeat center;
+    background-size: contain;
+  }
+  
+  /* ROW 2 IMAGE CENTER */
+  .image-row {
+    text-align: center;
+  }
+  
+  .image-row img {
+    width: 757px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+  
+    .feature-list {
+      grid-template-columns: repeat(2, auto);
+    }
+  
+    .tab-content {
+      min-height: auto;
+    }
+  }
+  
+  @media (max-width: 600px) {
+  
+    .feature-list {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+  }
