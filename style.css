@@ -6,7 +6,10 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
   }
-  
+  body{
+    width: 100%;
+    overflow-x: hidden;
+  }
   /* CONTAINER */
   .container {
     width: 90%;
@@ -141,174 +144,236 @@
     }
   
   }
-  /* HERO */
- /* HERO SECTION */
+  /* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
 .hero {
-    position: relative;
-    width: 100%;
-    max-width: 1440px;
-    height: 839px;
-    margin: 0 auto;
-    background: #000;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 839px;
+  margin: 0 auto;
+  background: #000;
+  overflow: hidden;
+}
+
+/* Background Image */
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("images/bg-image.png") no-repeat center/cover;
+  opacity: 0.3;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+/* Container */
+.hero-container {
+  position: relative;
+  width: 753px;
+  height: 583px;
+  top: 169px;
+  left: 122px;
+}
+
+/* Title */
+.hero-left h1 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 100%;
+  color: #FFFFFF;
+  width: 752px;
+}
+
+/* Subtitle */
+.hero-sub {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #00E0E9;
+  width: 633px;
+}
+
+/* Stats */
+.stats {
+  margin-top: 40px;
+  display: flex;
+  gap: 80px;
+}
+
+.stat h3 {
+  font-weight: 800;
+  font-size: 30px;
+  color: #3EC63E;
+}
+
+.stat p {
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* Button */
+.hero-btn {
+  margin-top: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 199px;
+  height: 40px;
+  background: #4DE6ED;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Right Bottom Image */
+.hero-right-img {
+  position: absolute;
+  width: 705px;
+  height: 506px;
+  bottom: 0;
+  right: 0;
+}
+
+
+/* ===================================================== */
+/* MOBILE (≤576px) */
+/* ===================================================== */
+
+@media (max-width: 576px) {
+
+  .hero {
+    height: auto;
+    padding: 120px 20px 60px 20px;
   }
-  
-  /* Background Image */
-  .hero-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url("images/bg-image.png") no-repeat center/cover;
-    opacity: 0.3;
-    box-shadow: 0px 4px 4px 0px #00000040;
-  }
-  
-  /* Container */
+
   .hero-container {
-    position: relative;
-    width: 753px;
-    height: 583px;
-    top: 169px;
-    left: 122px;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
   }
-  
-  /* Title */
+
   .hero-left h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 100%;
-    color: #FFFFFF;
-    width: 752px;
+    width: 100%;
+    font-size: 28px;
+    line-height: 120%;
   }
-  
-  /* Subtitle */
+
   .hero-sub {
-    margin-top: 30px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #00E0E9;
-    width: 633px;
+    width: 100%;
+    font-size: 16px;
   }
-  
-  /* Stats */
+
   .stats {
-    margin-top: 40px;
-    display: flex;
-    gap: 80px;
+    flex-direction: column;
+    gap: 25px;
   }
-  
+
   .stat h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    font-size: 30px;
-    color: #3EC63E;
+    font-size: 22px;
   }
-  
+
   .stat p {
-    margin-top: 8px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    color: #FFFFFF;
-  }
-  
-  /* Button */
-  .hero-btn {
-    margin-top: 60px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 199px;
-    height: 40px;
-    background: #4DE6ED;
-    color: #000;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
     font-size: 14px;
-    text-decoration: none;
-    border-radius: 4px;
   }
-  
-  /* Right Bottom Image */
+
+  .hero-btn {
+    margin-top: 30px;
+  }
+
   .hero-right-img {
-    position: absolute;
-    width: 705px;
-    height: 506px;
-    bottom: 0;
-    right: 0;
+    display: none;
+  }
+}
+
+
+/* ===================================================== */
+/* TABLET (577px–992px) */
+/* ===================================================== */
+
+@media (min-width: 577px) and (max-width: 992px) {
+
+  .hero {
+    height: auto;
+    padding-bottom: 80px;
   }
 
-  @media (max-width: 992px) {
-
-    /* ===== HEADER ===== */
-  
-    .nav {
-      display: none;
-    }
-  
-    .btn-demo {
-      display: none;
-    }
-  
-    .menu-toggle {
-      display: block;
-    }
-  
-  
-    /* ===== HERO SECTION ===== */
-  
-    .hero {
-      height: auto;
-      padding-bottom: 80px;
-    }
-  
-    .hero-container {
-      position: relative;
-      width: 90%;
-      left: 5%;
-      top: 120px;
-      height: auto;
-    }
-  
-    .hero-left h1 {
-      width: 100%;
-      font-size: 36px;
-      line-height: 120%;
-    }
-  
-    .hero-sub {
-      width: 100%;
-      font-size: 18px;
-    }
-  
-    /* Stats vertical */
-    .stats {
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    .stat h3 {
-      font-size: 24px;
-    }
-  
-    .stat p {
-      font-size: 16px;
-    }
-  
-    /* Button center */
-    .hero-btn {
-      margin-top: 40px;
-    }
-  
-    /* Hide right image on tablet/mobile */
-    .hero-right-img {
-      display: none;
-    }
-  
+  .hero-container {
+    width: 90%;
+    left: 5%;
+    top: 140px;
+    height: auto;
   }
+
+  .hero-left h1 {
+    width: 100%;
+    font-size: 36px;
+    line-height: 120%;
+  }
+
+  .hero-sub {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-right-img {
+    display: none;
+  }
+}
+
+
+/* ===================================================== */
+/* SMALL LAPTOP (993px–1200px) */
+/* ===================================================== */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+  .hero-container {
+    left: 60px;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+    width: 100%;
+  }
+
+  .hero-sub {
+    width: 100%;
+  }
+
+  .stats {
+    gap: 50px;
+  }
+
+  .hero-right-img {
+    width: 550px;
+    height: auto;
+  }
+}
+
+
+/* ===================================================== */
+/* EXTRA LARGE SCREENS (1600px+) */
+/* ===================================================== */
+
+@media (min-width: 1600px) {
+
+  .hero-container {
+    left: calc((100% - 1440px) / 2 + 122px);
+  }
+
+}
 
   /* TRUSTED LOGO SECTION */
   .trusted-section {
