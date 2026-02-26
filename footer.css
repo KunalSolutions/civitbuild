@@ -1,111 +1,97 @@
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
 .footer {
-    width: 100%;
-    background: #000000;
-    padding: 35px 0;
-  }
-  
-  .footer-container {
-    max-width: 1198px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-  }
-  
-  /* Column */
-  .footer-col {
-    color: #fff;
-  }
-  
-  /* Title */
-  .footer-title {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-  
-  /* Contact Item */
-  .footer-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 18px;
-  }
-  
-  .footer-item p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    margin: 0;
-  }
-  
-  /* Icon Circle */
-  .icon-circle {
-    width: 35px;
-    height: 35px;
-    background: #49C949;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-  }
-  
-  /* Office Text */
-  .office-text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-  }
-  
-  /* Social Icons */
-  .social-icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .social-icons a {
-    width: 35px;
-    height: 35px;
-    background: #fff;
-    color: #000;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  .social-icons a:hover {
-    background: #0cc0df;
-    color: #fff;
-  }
-  
-  /* ---------------- Responsive ---------------- */
-  
-  @media (max-width: 992px) {
-    .footer-container {
-      flex-direction: column;
-      gap: 50px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .footer {
-      padding: 40px 20px;
-    }
-  
-    .footer-title {
-      font-size: 18px;
-    }
-  
-    .footer-item p,
-    .office-text {
-      font-size: 14px;
-    }
-  }
+  width: 100%;
+  background: #000000;
+  padding: 60px 5%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* Column */
+.footer-col {
+  flex: 1 1 250px;   /* flexible columns */
+  min-width: 220px;
+  color: #fff;
+}
+
+/* Title */
+.footer-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* Contact Item */
+.footer-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.footer-item p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Icon Circle */
+.icon-circle {
+  width: 38px;
+  height: 38px;
+  background: #49C949;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+/* Office Text */
+.office-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 38px;
+  height: 38px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #0cc0df;
+  color: #fff;
+}
