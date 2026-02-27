@@ -720,11 +720,14 @@ padding-left: 12px;
 @media (min-width: 1024px) {
 
   .strategic-points {
-  width: 1000px;  
+  width: 1600px;  
 }
   .strategic-section {
     background: #fff;
-    padding-right: 160px;
+    padding-right: 300px;
+  }
+  .strategic-image {
+    margin-left: 150px;
   }
   .strategic-content {
     margin-top: -50px;
